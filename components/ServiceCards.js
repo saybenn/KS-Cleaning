@@ -24,7 +24,10 @@ const services = [
 
 const ServiceCard = () => {
   return (
-    <section className="lg:pt-40 lg:pb-10 py-16  text-center bg-gray-50 ">
+    <section
+      id="services"
+      className="lg:pt-40 lg:pb-10 py-16  text-center bg-gray-50 "
+    >
       <h2 className="text-3xl font-bold mb-6 lg:text-4xl">
         Our Cleaning Services
       </h2>

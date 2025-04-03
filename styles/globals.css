@@ -45,3 +45,7 @@ body {
   clip-path: polygon(100% 100%, 25% 100%, 0% 0%, 100% 0%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+

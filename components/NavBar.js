@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <h1 className="text-xl font-bold text-white text-shadow-lg w-1/2">
-          K&S Cleaning Company
+          Care Cleaning Company
         </h1>
 
         {/* Desktop Nav Links */}
@@ -52,7 +52,7 @@ const Navbar = () => {
 
         {/* Call Button */}
         <a
-          href="tel:1234567890"
+          href="tel:7576395555"
           className="hidden md:flex items-center bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition-all"
         >
           <FaPhone className="mr-2" /> Call Us
@@ -60,7 +60,7 @@ const Navbar = () => {
 
         {/* Mobile Call Button */}
         <a
-          href="tel:1234567890"
+          href="tel:7576395555"
           className="bg-yellow-400 text-gray-900 px-4 py-1 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition-all md:hidden flex justify-center items-center"
         >
           <FaPhone className="mr-2 inline" size={"1.3em"} /> Call Us

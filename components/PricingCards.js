@@ -2,7 +2,7 @@ import React from "react";
 
 const PricingCards = () => {
   return (
-    <section className="py-12 px-6 text-center bg-gray-50">
+    <section id="pricing" className="py-12 px-6 text-center bg-gray-50">
       <h2 className="text-3xl font-semibold lg:text-4xl">
         Choose Your Perfect Plan
       </h2>

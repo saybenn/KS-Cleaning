@@ -37,7 +37,7 @@ const TestimonialCarousel = () => {
       <h2 className="text-3xl font-bold mb-6 lg:text-5xl">
         What Our Clients Say
       </h2>
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="w-full overflow-hidden px-4">
         <Slider {...settings}>
           {testimonials.map((item, index) => (
             <div key={index} className="p-6 bg-gray-50 rounded-lg ">
