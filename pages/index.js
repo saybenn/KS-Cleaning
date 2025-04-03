@@ -1,113 +1,85 @@
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Hero from "@/components/Hero";
+import Benefits from "@/components/Benefits";
+import Sigue from "@/components/Sigue";
+import ServiceCard from "@/components/ServiceCards";
+import TestimonialCarousel from "@/components/TestimonialCarousel.js";
+import PricingCards from "@/components/PricingCards";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="bg-gray-50 text-gray-900">
+      <Head>
+        <title>K&S Cleaning Company - Proto</title>
+        <meta
+          name="description"
+          content="A modern and professional cleaning business template."
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      </Head>
+
+      {/* Hero Section */}
+      {/* LANDING & HERO */}
+      <div className="font-montserrat relative w-full h-[500px] sm:h-[600px] lg:h-[100vh] drop-shadow-xl">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/cleaning hero.png"
+            alt="Apollos Cleaning Service"
+            fill
+            className="object-cover"
+            priority
+            quality={80}
+          />{" "}
+          {/* Dark overlay */}
+          {/* <div className="absolute inset-0 bg-black/70"></div>{" "} */}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Text Overlay */}
+        {/* <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+          <h1 className="text-gray-900 text-4xl sm:text-5xl lg:text-6xl font-bold">
+            Anything and Everything Gets Cleaned
+          </h1>
+          <p className="text-gray-900  text-lg sm:text-xl mt-3 max-w-2xl">
+            Professional cleaning services for your home, car, and business.
+          </p>
+          <button className="btn-primary mt-6 mb-6 px-6 py-3 bg-gold text-gray-900  font-semibold rounded-lg shadow-md hover:bg-[#b8975e8c] transition-all">
+            Get a Free Quote
+          </button>
+          <h2 className="text-gray-900  text-2xl sm:text-3xl lg:text-4xl font-bold">
+            Veteran Owned & Operated
+          </h2>
+        </div> */}
+        <Hero />
+      </div>
+
+      {/* Benefits */}
+      <Benefits />
+
+      {/* Services Section */}
+      <ServiceCard />
+
+      {/* Why Choose Us */}
+      <Sigue />
+
+      {/* Testimonials */}
+      <TestimonialCarousel />
+      {/* Pricing Section */}
+      <PricingCards />
+
+      {/* Contact Section */}
+      {/* <section
+        id="contact"
+        className="bg-blue-600 text-white py-12 text-center"
+      >
+        <h2 className="text-3xl font-semibold">Call for a Free Quote</h2>
+        <p className="text-lg mt-2">📞 (123) 456-7890</p>
+      </section> */}
+      <ContactForm />
     </div>
   );
 }
+
