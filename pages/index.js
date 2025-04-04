@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="bg-gray-50 text-gray-900">
       <Head>
-        <title>Care Cleaning Company - Proto</title>
+        <title>K&S Cleaning Company - Proto</title>
         <meta
           name="description"
           content="A modern and professional cleaning business template."
@@ -76,7 +76,7 @@ export default function Home() {
         className="bg-blue-600 text-white py-12 text-center"
       >
         <h2 className="text-3xl font-semibold">Call for a Free Quote</h2>
-        <p className="text-lg mt-2">📞 (757) 376-0101</p>
+        <p className="text-lg mt-2">📞 (757) 639-5555</p>
       </section> */}
       <ContactForm />
     </div>
