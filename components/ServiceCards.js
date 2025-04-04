@@ -35,6 +35,7 @@ const ServiceCard = () => {
         {services.map((service, index) => (
           <div
             id={index}
+            key={index}
             className=" p-6 text-center flex flex-col items-center bg-gray-50"
           >
             <Image
