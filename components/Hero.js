@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import { FaDollarSign, FaHandsHelping, FaUsers } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <section
-      className="relative h-screen bg-cover bg-center"
+      className="relative h-screen bg-cover bg-center mb-12"
       style={{ backgroundImage: "url('/images/cleaning hero.png')" }}
     >
       <div className="absolute inset-0  bg-opacity-10"></div>
@@ -22,6 +23,22 @@ const Hero = () => {
         >
           Get a Free Quote
         </Link>
+      </div>
+      {/* Floating Bubbles Section */}
+      <div className="absolute left-1/2 bottom-[-75px] transform -translate-x-1/2 z-30 w-full px-4 grid grid-cols-3 gap-4 ">
+        {[
+          { title: "Excellent Team", icon: <FaUsers /> },
+          { title: "Excellent Price", icon: <FaDollarSign /> },
+          { title: "Excellent Service", icon: <FaHandsHelping /> },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="bg-white/30 shadow-lg py-6 px-8 rounded-full flex flex-col justify-center items-center"
+          >
+            <span className="text-4xl">{item.icon}</span>
+            <h3 className="text-xl font-bold mt-2">{item.title}</h3>
+          </div>
+        ))}
       </div>
     </section>
   );

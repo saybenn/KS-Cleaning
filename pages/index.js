@@ -23,8 +23,7 @@ export default function Home() {
 
       {/* Hero Section */}
       {/* LANDING & HERO */}
-      <div className="font-montserrat relative w-full h-[500px] sm:h-[600px] lg:h-[100vh] drop-shadow-xl">
-        {/* Background Image */}
+      {/* <div className="font-montserrat relative w-full h-[500px] sm:h-[600px] lg:h-[100vh] drop-shadow-xl">
         <div className="absolute inset-0">
           <Image
             src="/images/cleaning hero.png"
@@ -34,12 +33,11 @@ export default function Home() {
             priority
             quality={80}
           />{" "}
-          {/* Dark overlay */}
-          {/* <div className="absolute inset-0 bg-black/70"></div>{" "} */}
-        </div>
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div> */}
 
-        {/* Text Overlay */}
-        {/* <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      {/* Text Overlay */}
+      {/* <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <h1 className="text-gray-900 text-4xl sm:text-5xl lg:text-6xl font-bold">
             Anything and Everything Gets Cleaned
           </h1>
@@ -53,11 +51,10 @@ export default function Home() {
             Veteran Owned & Operated
           </h2>
         </div> */}
-        <Hero />
-      </div>
+      <Hero />
 
       {/* Benefits */}
-      <Benefits />
+      {/* <Benefits /> */}
 
       {/* Services Section */}
       <ServiceCard />
