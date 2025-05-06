@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="bg-gray-50 text-gray-900">
       <Head>
-        <title>K&S Cleaning Company - Proto</title>
+        <title>Standard Cleaning Company - Proto</title>
         <meta
           name="description"
           content="A modern and professional cleaning business template."

@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="flex items-center gap-x-2 w-full">
             {" "}
             <FaEnvelope className="text-lg  text-left" />
-            <span>info@kscleaningcompany.com</span>
+            <span>info@standardcleaningcompany.com</span>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
             <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-500" />
           </div>
           <p className="text-sm text-right">
-            &copy; {new Date().getFullYear()} K&S Cleaning Company
+            &copy; {new Date().getFullYear()} Standard Cleaning Company
           </p>
         </div>
       </div>

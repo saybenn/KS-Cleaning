@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
         {/* Logo */}
         <h1 className="text-xl font-bold text-white text-shadow-lg w-1/2">
-          K&S Cleaning Company
+          Standard Cleaning Company
         </h1>
 
         {/* Desktop Nav Links */}
