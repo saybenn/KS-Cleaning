@@ -52,7 +52,7 @@ const Navbar = () => {
 
         {/* Call Button */}
         <a
-          href="tel:7576395555"
+          href="tel:7571234567"
           className="hidden md:flex items-center bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition-all"
         >
           <FaPhone className="mr-2" /> Call Us
@@ -60,7 +60,7 @@ const Navbar = () => {
 
         {/* Mobile Call Button */}
         <a
-          href="tel:7576395555"
+          href="tel:7571234567"
           className="bg-yellow-400 text-gray-900 px-4 py-1 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition-all md:hidden flex justify-center items-center"
         >
           <FaPhone className="mr-2 inline" size={"1.3em"} /> Call Us
